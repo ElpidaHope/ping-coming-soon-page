@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin';
+    height: 100vh;
+}
+
+.container {
+    padding: 50px 0;
+    margin: 0px auto;
+    text-align: center;
+    width: 300px;
+}
+
+.logo {
+    width: 50px;
+    margin: 0 auto 30px;
+}
+
+.header {
+    margin: 0 auto 20px;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.header span {
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+.header p {
+    font-size: 0.8rem;
+    color: var(--Very-Dark-Blue);
+}
+
+input {
+    padding: 10px 0;
+    width: 300px;
+    border-radius: 20px;
+    height: 38px;
+}
+
+input::placeholder {
+    color: var(--Gray);
+    font-weight: 300;
+    font-family: 'Libre Franklin';
+}
+
+input:nth-child(1) {
+    border: 1px solid var(--Pale-Blue);
+    padding-left: 30px;
+}
+
+.error input:nth-child(1) {
+    border: 1.2px solid var(--Light-Red);
+}
+
+input:nth-child(1):focus {
+    outline: none;
+    border: 1.2px solid var(--Pale-Blue);
+}
+
+.error input:nth-child(1):focus {
+    border: 1.2px solid var(--Light-Red);
+}
+
+input:nth-child(3) {
+    background-color: var(--Blue);
+    border: var(--Blue);
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 1px 3px 2px var(--Pale-Blue);
+}
+
+input:nth-child(3):hover {
+    opacity: 0.7;
+}
+
+img {
+    width: 100%;
+}
+
+.main-img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+form p {
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: var(--Light-Red);
+    font-style: italic;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.error p {
+    display: block
+}
+
+ul {
+    margin-top: 80px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.fab {
+    width: 30px;
+    height: 30px;
+    color: var(--Blue);
+    border-radius: 50%;
+    border: 1px solid var(--Pale-Blue);
+    line-height: 30px;
+}
+
+.fab:hover {
+    background-color: var(--Blue);
+    color: white;
+}
+
+.footer p {
+    font-size: 0.7rem;
+    color: var(--Gray);
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 500px;
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    input:nth-child(1) {
+        flex: 130%;
+    }
+
+    .main-img {
+        width: 500px;
+    }
+
+    small {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    form p {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+    }
+
+    input:nth-child(3) {
+        margin: 0;
+    }
+    
+}
