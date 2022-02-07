@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    padding: 50px 0;
+    padding: 100px 0;
     margin: 0px auto;
     text-align: center;
     width: 300px;
@@ -150,6 +150,18 @@ ul {
 @media (min-width:768px) {
     .container {
         width: 500px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
     }
     
     form {
